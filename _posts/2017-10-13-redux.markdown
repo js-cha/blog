@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "Redux"
+date:   2017-10-13 21:11:00 +1100
+categories: redux
+---
+
+Wow, my first post is on Redux. I'm not even sure why, but here I go.
+
+#### What the Redux?
+
+Redux is an application state management library for JavaScript Apps.
+
+#### Ingredients of a Redux Application
+
+These are the basic ingredients required to create a Redux Application:
+
+  - Actions
+  - Action Creators
+  - Reducers
+  - Store
+
+#### Actions
+
+Actions are simple JavaScript objects that have a `type` property which signifies the type of action being dispatched. The action type can be written as a constant in a separate file but is not imperative.
+
+{% highlight javascript %}
+  const SOME_ACTION = 'SOME_ACTION'
+{% endhighlight %}
+
+#### Action Creators
+
+Action Creators are functions that simply return actions.
+
+{% highlight javascript %}
+  function someActionCreator(action) {
+    return {
+      type: SOME_ACTION,
+      payload: action
+    }
+  }
+{% endhighlight %}
+
+It's common to use the payload property to store the data that is being passed to the store, however you can name this property whatever you want.
+
+#### Reducers
+
+So far, we have Actions and Action Creators, these are like signs and signals that an application state has changed. The role of Reducers is to update the application state tree.
+
+Reducers are pure functions that takes the previous state of the application and an action which then returns the next state.
+
+It's important to reiterate that Reducers are **pure functions** -- no side effects and no direct mutation of state allowed. It is simply taking the previous state, and the new action and then **reducing** it down to a single state tree.
+
+
+{% highlight javascript %}
+  function someAction(state = '', action) {
+    if (action.type === SOME_ACTION) {
+      return action.payload
+    } else {
+      return state
+    }
+  }
+
+  const rootReducer = function(state = {}, action) {
+    return {
+      action: someAction(state.action, action),
+    }
+  }
+{% endhighlight %}
+
+#### Store
+
+The Redux store is the command-and-control center for the application. This is where the application state is stored and updated via the dispatch function. The dispatch function simply dispatches an Action Creator which in turn gets processed by the Reducers and then the state tree gets updated in the Store.
+
+
+#### Wrapping it up
+
+*Actions, Action Creators, Reducers, Store*.
+
+*Actions, Action Creators, Reducers, Store*.
+
+*Actions, Action Creators, Reducers, Store*.
+
+One more time.
+
+*Actions, Action Creators, Reducers, Store*.
+
+Things I didn't cover here for myself:
+
+- MapStateToProps
+- MapDispatchToProps
+- Connect
+- CombineReducers
