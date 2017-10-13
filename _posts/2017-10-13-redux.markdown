@@ -45,9 +45,9 @@ It's common to use the payload property to store the data that is being passed t
 
 #### Reducers
 
-So far, we have Actions and Action Creators, these are like signs and signals that an application state has changed. The role of Reducers is to update the application state tree.
+So far, we have Actions and Action Creators, these are like signs and signals that an application state has changed. The role of Reducers is to determine how the application state tree changes.
 
-Reducers are pure functions that takes the previous state of the application and an action which then returns the next state.
+Reducers are pure functions that takes the previous state and an action, and returns the next state.
 
 It's important to reiterate that Reducers are **pure functions** -- no side effects and no direct mutation of state allowed. It is simply taking the previous state, and the new action and then **reducing** it down to a single state tree.
 
