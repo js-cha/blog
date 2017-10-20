@@ -102,9 +102,3 @@ The `this` value is contingent upon the context object, whether it be the global
   object.sayThis(); // object - cow
 
 {% endhighlight %}
-
-<br>
-<br>
-<br>
-
-Part 2 to be continued...
