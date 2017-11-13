@@ -2,8 +2,10 @@
 layout: post
 title: "Prototype Chaining"
 date: 2017-10-20 1:4:00 +1100
-categories: prototype chaining
+categories: prototype chaining backtobasics
 ---
+
+JavaScript - Back to Basics
 
 ### Constructors
 

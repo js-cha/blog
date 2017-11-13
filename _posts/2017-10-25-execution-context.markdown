@@ -2,8 +2,10 @@
 layout: post
 title: "Execution Context"
 date: 2017-10-25 21:52:00 +1100
-categories: execution context
+categories: execution context backtobasics
 ---
+
+JavaScript - Back to Basics
 
 The execution context defines what variables and functions it has access to.
 

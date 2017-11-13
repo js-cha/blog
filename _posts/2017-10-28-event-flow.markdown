@@ -2,8 +2,10 @@
 layout: post
 title: "Event flow"
 date: 2017-10-28 21:52:00 +1100
-categories: event flow
+categories: event flow backtobasics
 ---
+
+JavaScript - Back to Basics
 
 A DOM event flow has three phases:
 

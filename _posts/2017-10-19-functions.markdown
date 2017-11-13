@@ -2,8 +2,10 @@
 layout: post
 title:  "Functions"
 date:   2017-10-19 18:01:00 +1100
-categories: functions
+categories: functions backtobasics
 ---
+
+JavaScript - Back to Basics
 
 Random but important things about functions
 
