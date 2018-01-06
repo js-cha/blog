@@ -65,7 +65,7 @@ Interestingly, regardless of the type, all function arguments are passed in by v
   }
 
   setAgeProperty(person); // null;
-  console.log(person); // {name: 'Joseph'}
+  console.log(person); // {name: 'Joseph', age: 25}
 
 {% endhighlight %}
 
