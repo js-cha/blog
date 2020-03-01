@@ -1,0 +1,8 @@
+# Go
+
+When you ask people, what are the main features of Go? Concurrency, performance, simplicity are some of things that will first come to mind and this is certainly how I was introduced to Go by a colleague. All of those features are true of Go lang, but they are not the defining features of this language. William Kennedy best summarised it when he said: 
+
+> What Go is going to remembered for is its ability to allow us to write code that can decouple itself from change, it's Go's interfaces, composition that's really going to stand out and become part of the next set of languages in the next ten years from now. - William Kennedy [Source](https://www.youtube.com/watch?v=7YcLIbG1ekM)
+
+Go requires a new mental model of how we write code to avoid the mistakes of the past where we might be tempted to continue the old flawed way of doing things while not embracing the new and improved way of writing code. If we come in with a blank slate we will be able to fully embrace the design philosophy, features and conventions of Go that simplifies how we organise, structure and write code that is resilient and decoupled from change.
+
